@@ -1,0 +1,21 @@
+*{
+	font-family: Verdana;
+}
+body {
+	background-color: #EFFBF8;
+}
+.tabla_de_eventos {
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+	min-width: 400px;
+}
+.tabla_de_eventos thead tr {
+	background-color: #587792;
+	color: #ffffff;
+	text-align: left;
+}
+.tabla_de_eventos th,
+.tabla_de_eventos td {
+	padding: 6px 10px;
+}
