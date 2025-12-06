@@ -11,7 +11,7 @@ for port in ports: print(port)
 
 
 #Esta línea se conecta al puerto serial. Seguramente hay que cambiarla dependiendo de la computadora.
-serialCom = serial.Serial('/dev/cu.usbmodemFA121', 57600)
+serialCom = serial.Serial('/dev/cu.usbmodemFD141', 57600)
 
 #Resetear el arduino
 serialCom.setDTR(False)
@@ -40,8 +40,9 @@ while(1):
 		nuevo_evento = dict(zip(llaves, datos))
 		eventos.append(nuevo_evento)
 		print("Nuevo evento registrado")
-	except:
+	except Exception as e:
 		print("Error: no se pudo leer una línea")
+		print(e)
 	#Actualizamos la lista de eventos y el archivo
 	nuevos_eventos = json.dumps(dict(eventos = eventos), indent=4)
 	with open(archivo_logs, 'w') as file:

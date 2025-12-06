@@ -1,4 +1,104 @@
 {
-	"eventos" : [
-]
+    "eventos": [
+        {
+            "tipo": "Apertura",
+            "fecha": "6/12/2025",
+            "hora": "14:32:6"
+        },
+        {
+            "tipo": "Cierre",
+            "fecha": "6/12/2025",
+            "hora": "14:32:9"
+        },
+        {
+            "tipo": "Apertura",
+            "fecha": "6/12/2025",
+            "hora": "14:33:55"
+        },
+        {
+            "tipo": "Cierre",
+            "fecha": "6/12/2025",
+            "hora": "14:33:59"
+        },
+        {
+            "tipo": "Apertura",
+            "fecha": "6/12/2025",
+            "hora": "14:34:11"
+        },
+        {
+            "tipo": "Cierre",
+            "fecha": "6/12/2025",
+            "hora": "14:34:11"
+        },
+        {
+            "tipo": "Apertura",
+            "fecha": "6/12/2025",
+            "hora": "14:34:19"
+        },
+        {
+            "tipo": "Cierre",
+            "fecha": "6/12/2025",
+            "hora": "14:34:19"
+        },
+        {
+            "tipo": "Apertura",
+            "fecha": "6/12/2025",
+            "hora": "14:34:22"
+        },
+        {
+            "tipo": "Cierre",
+            "fecha": "6/12/2025",
+            "hora": "14:34:22"
+        },
+        {
+            "tipo": "Apertura",
+            "fecha": "6/12/2025",
+            "hora": "14:34:36"
+        },
+        {
+            "tipo": "Cierre",
+            "fecha": "6/12/2025",
+            "hora": "14:34:36"
+        },
+        {
+            "tipo": "Apertura",
+            "fecha": "6/12/2025",
+            "hora": "14:34:39"
+        },
+        {
+            "tipo": "Cierre",
+            "fecha": "6/12/2025",
+            "hora": "14:34:42"
+        },
+        {
+            "tipo": "Apertura",
+            "fecha": "6/12/2025",
+            "hora": "14:38:58"
+        },
+        {
+            "tipo": "Cierre",
+            "fecha": "6/12/2025",
+            "hora": "14:38:59"
+        },
+        {
+            "tipo": "Apertura",
+            "fecha": "6/12/2025",
+            "hora": "14:40:40"
+        },
+        {
+            "tipo": "Cierre",
+            "fecha": "6/12/2025",
+            "hora": "14:40:41"
+        },
+        {
+            "tipo": "Apertura",
+            "fecha": "6/12/2025",
+            "hora": "14:41:16"
+        },
+        {
+            "tipo": "Cierre",
+            "fecha": "6/12/2025",
+            "hora": "14:41:17"
+        }
+    ]
 }
