@@ -5,6 +5,12 @@
 		"fecha" : "12/09/2025",
 		"día" : "Lunes", 
 		"hora" : "11:23"	
+	},
+	{
+		"tipo" : "apertura",
+		"fecha" : "12/09/2025",
+		"día" : "Lunes", 
+		"hora" : "11:23"	
 	}
 ]
 }
