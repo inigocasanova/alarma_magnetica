@@ -1,8 +1,21 @@
 <!DOCTYPTE html>
 <html>
+  <head>
+        <link rel="stylesheet" href="styles.css">
+  </head>
   <body>
-    <h1>Historial de movimientos?</h1>
-        <div id="lista-actividad"></div>
-    <script src="buscar_datostos.js"></script>
+    <h1>Historial de movimientos</h1>
+        <table class="tabla_de_eventos">
+                <thead>
+                        <tr>
+                                <th> Evento </th>
+                                <th> Fecha </th>
+                                <th> Hora </th>
+                        </tr>
+                </thead>
+        <tbody id="lista-actividad">
+        </tbody>
+        </table>
+    <script src="buscar_datos.js"></script>
   </body>
 </html>
