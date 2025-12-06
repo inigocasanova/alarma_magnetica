@@ -24,6 +24,6 @@
 
 		
 	//Agarramos los datos del documento.
-	fetch("../logs.json")
+	fetch("logs.json")
 	.then(response => response.json())
 	.then(datos => generarTabla(datos));
