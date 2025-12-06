@@ -1,9 +1,36 @@
 <!DOCTYPTE html>
+<!DOCTYPTE html>
 <html>
   <body>
-    <h1>Historial de movimientos.</h1>
+    <h1>Historial de movimientos?</h1>
+        <div id="lista-actividad"></div>
     <script>
-      alert('js?');
+        //Creo que buscamos el elemento donde vamos a poner la tabla.
+        const listaDeActividad = document.querySelector("#lista-actividad");
+ 
+        //Función para generar la tabla.
+        const generarTabla = (datos) => {
+                //Iteramos en los eventos
+                datos.eventos.forEach((evento) => {
+                        //Creamos unos divs
+                        const nuevoDivDeLinea = document.createElement('div');
+ 
+                        //Definimos algo de html que ponerle a nuestro nuevo div.
+                        const movimientoHTML = `
+                        <p>Probando</p>
+                        `;
+                 
+                        //Le metemos el html definido a listaDeActividad.
+                        nuevoDivDeLinea.innerHTML = movimientoHTML;
+                        //Agregar el div al div de las listas.
+                        listaDeActividad.appendChild(nuevoDivDeLinea);
+                });
+        };
+    
+        //Agarramos los datos del documento.
+        fetch("../logs.json")
+        .then(response => response.json())
+        .then(datos => generarTabla(datos));
     </script>
   </body>
 </html>
