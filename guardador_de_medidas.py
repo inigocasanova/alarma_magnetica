@@ -11,7 +11,7 @@ for port in ports: print(port)
 
 
 #Esta línea se conecta al puerto serial. Seguramente hay que cambiarla dependiendo de la computadora.
-serialCom = serial.Serial('/dev/cu.usbmodemFD141', 57600)
+serialCom = serial.Serial('/dev/cu.usbmodemFD131', 57600)
 
 #Resetear el arduino
 serialCom.setDTR(False)
@@ -27,8 +27,8 @@ with open(archivo_logs, 'r') as file:
 eventos = eventosJSON['eventos']
 
 
-#Definimos las llaves para el diccionario que serán los eventos.
-llaves = ["tipo", "fecha", "hora"]
+#Definimos las llaves para el diccionario que contedrá los eventos.
+llaves = ["tipo", "estado", "fecha", "hora"]
 
 
 while(1):
@@ -45,5 +45,8 @@ while(1):
 		print(e)
 	#Actualizamos la lista de eventos y el archivo
 	nuevos_eventos = json.dumps(dict(eventos = eventos), indent=4)
+	nuevo_estado = json.dumps(dict(eventos = [eventos[-1]]), indent=4)
 	with open(archivo_logs, 'w') as file:
 		file.write(nuevos_eventos)
+	with open("estado.json", 'w') as file:
+		file.write(nuevo_estado)

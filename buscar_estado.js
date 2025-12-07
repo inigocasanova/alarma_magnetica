@@ -10,7 +10,7 @@
 
 			//Definimos algo de html que ponerle a nuestro nuevo div.
 			const movimientoHTML = `
-			<h2>${evento.estado}</h2>
+			<h2>${evento.estado}.</h2>
 			`;
 		
 			//Le metemos el html definido a listaDeActividad.

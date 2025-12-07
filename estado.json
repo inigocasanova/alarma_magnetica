@@ -1,7 +1,10 @@
 {
     "eventos": [
         {
-            "estado": "cerrado"
+            "tipo": "Cierre",
+            "estado": "cerrado",
+            "fecha": "7/12/2025",
+            "hora": "11:50:45"
         }
     ]
 }
