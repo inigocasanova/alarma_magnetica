@@ -1,0 +1,27 @@
+	//Creo que buscamos el elemento donde vamos a poner la tabla.
+	const listaDeActividad = document.querySelector("#lista-actividad");
+
+	//Función para generar la tabla.
+	const generarTabla = (datos) => {
+		//Iteramos en los eventos
+		datos.eventos.forEach((evento) => {
+			//Creamos unos divs
+			const nuevoDivDeLinea = document.createElement('div');
+
+			//Definimos algo de html que ponerle a nuestro nuevo div.
+			const movimientoHTML = `
+			<h2>${evento.estado}</h2>
+			`;
+		
+			//Le metemos el html definido a listaDeActividad.
+			nuevoDivDeLinea.innerHTML = movimientoHTML;
+			//Agregar el div al div de las listas.
+			listaDeActividad.appendChild(nuevoDivDeLinea);
+		});
+	};
+
+		
+	//Agarramos los datos del documento.
+	fetch("estado.json")
+	.then(response => response.json())
+	.then(datos => generarTabla(datos));

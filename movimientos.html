@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+<meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
   <head>
         	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
-	<title>Alarma magnética | Estado actual</title>
+	<title>Alarma magnética | Historial</title>
   </head>
   <body>
   	<header>
@@ -12,18 +15,20 @@
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Actualizar</a></li>
-            <li><a href="movimientos.html">Historial</a></li>
+            <li><a href="movimientos.html">Actualizar</a></li>
+            <li><a href="index.html">Estado actual</a></li>
         </ul>
     </nav>
         <table class="tabla_de_eventos">
                 <thead>
                         <tr>
-                                <th> El cerrojo está: </th>
+                                <th> Evento </th>
+                                <th> Fecha </th>
+                                <th> Hora </th>
                         </tr>
                 </thead>
         <tbody id="lista-actividad">
         </tbody>
         </table>
-    <script src="buscar_estado.js"></script>
+    <script src="buscar_datos.js"></script>
 </html>

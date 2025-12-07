@@ -4,6 +4,27 @@
 body {
 	background-color: #EFFBF8;
 }
+body, ul, li, h1, h2, a{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #231942;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+}
+main{
+
+    height: 50vh;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
 .tabla_de_eventos {
 	border-collapse: collapse;
 	margin: 25px 0;
@@ -18,4 +39,40 @@ body {
 .tabla_de_eventos th,
 .tabla_de_eventos td {
 	padding: 6px 10px;
+}
+nav{
+    background: #9BC53D;
+    padding: 10px;
+    position: sticky;
+    width: 100%;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+.card{
+    background: #587792;
+    display: flex;
+    flex-direction: column;
+    max-width: min(190vw, 1375px);
+    border-radius: 10px;
+}
+.card-text{
+	text-align: center;
+	color: white;
+	padding-top: 2em;
+  	padding-right: 2em;
+  	padding-bottom: 2em;
+  	padding-left: 2em;
 }
