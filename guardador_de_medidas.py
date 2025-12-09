@@ -11,7 +11,7 @@ for port in ports: print(port)
 
 
 #Esta línea se conecta al puerto serial. Seguramente hay que cambiarla dependiendo de la computadora.
-serialCom = serial.Serial('/dev/cu.usbmodemFD131', 57600)
+serialCom = serial.Serial('COM4', 57600)
 
 #Resetear el arduino
 serialCom.setDTR(False)
